@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #d9f7f0;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dodreamsdigital.connect4.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="250.0" minWidth="201.0" prefWidth="227.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1" />
+      <VBox style="-fx-background-color: #2b3b4c;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Pane prefHeight="175.0" prefWidth="227.0">
+               <children>
+                  <TextField fx:id="playerTwoTextField" alignment="CENTER" layoutX="17.0" layoutY="63.0" prefHeight="25.0" prefWidth="200.0" promptText="Player Name" />
+                  <Button fx:id="setNamesButton" alignment="CENTER" layoutX="17.0" layoutY="97.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #d9f7f0;" text="Set Names" textFill="#2857e0">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font></Button>
+                  <TextField fx:id="playerOneTextField" alignment="CENTER" layoutX="17.0" layoutY="28.0" prefHeight="25.0" prefWidth="200.0" promptText="Player Name">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                  </TextField>
+               </children></Pane>
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="28.0" prefWidth="255.0" text="Player One" textFill="#ff8c00">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="255.0" text="Your Turn" textFill="AQUA">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" layoutY="162.0" prefHeight="38.0" prefWidth="227.0" text="DoDreamsDigital" textAlignment="CENTER" textFill="#17f500">
+                     <font>
+                        <Font name="Chiller" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+    </children>
+</GridPane>
